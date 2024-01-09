@@ -1,0 +1,134 @@
+body {
+  display: grid;
+  font-family: 'Poppins', sans-serif;
+  background-image: url(/images/profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.grid {
+  margin: 0;
+  border-radius: 25px;
+  background-color: rgba(255, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  width: 20em;
+  height: 18em;
+  backdrop-filter: blur(20px);
+  font-size: 20px
+}
+.grid2 {
+  margin: 0;
+  border-radius: 25px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  padding: 20px;
+  width: 30em;
+  height: 26.7em;
+  backdrop-filter: blur(20px);
+  font-size: 25px;
+  overflow-y: scroll; 
+}
+.comment-input-container {
+  display: flex;
+  align-items: center;
+}
+
+.comment-input-container textarea {
+  flex: 1;
+}
+
+.add-comment-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.add-comment-button,
+.close-ticket-button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+.add-comment-button:hover,
+.close-ticket-button:hover {
+  background-color: darkgreen;
+}
+
+.close-ticket-button {
+  background-color: red;
+}
+
+.close-ticket-button:hover {
+  background-color: darkred;
+}
+.add-comment-button:hover {
+  background-color: darkgreen;
+}
+nav ul {
+	padding: 0;
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+}
+  
+nav a {
+  color: white;
+	text-decoration: none;
+	font-size: 16px;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+.container {
+  grid-template-columns: [first] 33% [line2] 33% [line3] auto [col4-start];
+  grid-template-rows: [row1-start] 25% [row1-end] 33% [third-line];
+}
+#ticket-list {
+    max-height: 500px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  .ticket {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+  }
+  .ticket-header {
+    font-weight: bold;
+  }
+  .ticket-body {
+    margin-top: 10px;
+  }
+  #chat-input {
+    margin-top: 20px;
+  }
+  #chat-input form {
+    display: flex;
+    align-items: center;
+  }
+  #chat-input input[type="text"] {
+    flex: 1;
+    margin-right: 10px;
+  }
+  #chat-input button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  #chat-input button:hover {
+    background-color: #3e8e41;
+  }

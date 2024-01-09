@@ -1,0 +1,152 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+body {
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(/images/profile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav {
+    width: 72px;
+    height: max-content;
+    position: fixed;
+    inset: 0;
+    margin: auto 0;
+}
+header {
+	background-color: transparent;
+    background-color: rgba(0,0,0,.7);
+    backdrop-filter: blur(2em);
+	color: #fff;
+}
+h1 {
+	margin: 0;
+	font-size: 3.6em;
+	font-weight: normal;
+	text-align: center;
+}
+.nav-list {
+    position: relative;
+    background-color: #7CB9E8;
+    padding-block: 70px;
+    border-radius: 0 51px 51px 0;
+    display: grid;
+    justify-content: center;
+    row-gap: 2rem;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-flex;
+    padding: 4px;
+    border-radius: 50%;
+    transition: background 0.4s;
+}
+
+.nav-link ion-icon{
+    font-size: 1.25rem;
+    color:white;
+    transition: color 0.4s;
+}
+
+.nav-name {
+    position: absolute;
+    top: 0;
+    transform: translateX(56px);
+    background-color: black;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: 3rem;
+    pointer-events: none;
+    transition: transform 0.5s, opacity 0.5s;
+    opacity: 0;
+}
+
+.nav-link:hover .nav-name{
+    opacity: 1;
+    transform: translateX(48px);
+}
+
+
+form {
+    margin: 50px auto;
+    width: 50%;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+.user-type {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+}
+
+.user-type.agent {
+    background-color: #17a2b8;
+}
+
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #0069d9;
+}
+nav ul {
+	padding: 0;
+	list-style: none;
+}
+nav li {
+	display: inline-block;
+}
+  
+nav a {
+     color: white;
+    text-decoration: none;
+	font-size: 1.5em;
+    margin-left: 2em;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+
+.footer {
+    background-color: rgb(51, 38, 88);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .footer p {
+	margin: 0;
+	font-size: 1em;
+}

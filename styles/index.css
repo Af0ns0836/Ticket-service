@@ -1,0 +1,200 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(https://marketplace.canva.com/EAFHm4JWsu8/1/0/1600w/canva-pink-landscape-desktop-wallpaper-HGxdJA_xIx0.jpg);
+}
+.header .logo {
+    width: 50vw;
+    padding-left: 2em;
+    font-size: 2em;
+    color: #2a293d;
+    user-select: none;
+}
+
+header nav {
+    width: 25%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    padding: 1em 1em 5em 3m;/*20px 100px*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.navigation{
+    display: flex;
+}
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color: #2a293d;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left:  2vw;
+}
+.navigation .loginbtn {
+    width: 6.5vw;
+    height: 5vh;
+    background: transparent;
+    border: 0.15vw solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .loginbtn:hover{
+    background: #fff;
+    color: black;
+}
+
+.naosei {
+    display: grid;
+    width: 20em;
+    height: 26em;
+    background: transparent;
+    border: 0.2em solid rgba(255, 255, 255, .5 );
+    border-radius: 2vh;
+    backdrop-filter: blur(2vh);
+    box-shadow: 0 0 3em rgba(0, 0, 0, .5);
+    overflow: hidden;
+    transform: scale(1);
+    transition: height .2s ease;
+}
+
+.naosei.active-popup {
+    transform: scale(1);
+}
+
+.naosei.active {
+    height: 33em;
+}
+
+.naosei .form-box {
+    width: auto;
+    padding: 2em;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.naosei .form-box.login {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+
+.naosei.active .form-box.login {
+    transition: none;
+    transform: translateX(-40em);
+}
+
+.naosei .form-box.register {
+    transition: none;
+    transform: translateX(40em);
+
+}
+.naosei.active .form-box.register {
+    transition: transform .18s ease;
+    transform: translateX(0);
+}
+.form-box h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+
+.inputbox {
+    width: auto;
+    height: auto;
+    border-bottom: 2px solid black;
+    margin: 20px 0;
+}
+
+.inputbox label {
+    top: auto;
+    left: 0.5em;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    font-weight:  500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -0.5em;
+}
+
+.inputbox input{
+    width: 100%;
+    height: auto;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: black;
+    padding: 0 0 0 0;
+}
+
+.inputbox .icon{
+    position: absolute;
+    right: 0.5em;
+    font-size: 1.2em;
+    color: black;
+    line-height: 4em;
+}
+.btn {
+    width: 100%;
+    height: 3.5em;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 0.6em;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.loginregister {
+    font-size: .9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+    margin: 2.5em 0 1em;
+}
+
+.loginregister p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.loginregister p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,185 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+body {
+	display: grid;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(/images/sunset.jpg);
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-text {
+	background-color: rgba(0,0,0, 0.4); 
+	color: white;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	text-align: center;
+	grid-column: 3 / span 2;
+    grid-row: 1 / 2;
+    display: grid;
+    align-items: end;
+	backdrop-filter: blur(20px);
+  }
+  .use-answer-button {
+	background-color:  rgb(224, 139, 139);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+.greenbutton {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+.greenbutton:hover {
+  background-color: darkgreen;
+}
+.redbutton {
+	background-color: red;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 0.5em;
+}
+.redbutton:hover {
+	background-color: darkred;
+}
+.use-answer-button:hover {
+	background-color: rgb(224, 139, 139);
+}
+header {
+	background-color: rgb(255, 180, 180);
+	color: #fff;
+	padding: 20px;
+}
+h1 {
+	margin: 0;
+	font-size: 36px;
+	font-weight: normal;
+	text-align: center;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+  }
+  
+  nav li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 16px;
+  }
+  
+  nav a:hover {
+	text-decoration: underline;
+  }
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.faq-box {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+
+.faq-item {
+	margin-bottom: 20px;
+}
+
+.input-box {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+.input-box label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.input-box input[type="text"],
+.input-box textarea {
+	width: 100%;
+	padding: 8px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: vertical;
+}
+
+.input-box textarea {
+	height: 100px;
+}
+
+.input-box input[type="submit"] {
+	background-color: rgb(224, 139, 139);
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.input-box input[type="submit"]:hover {
+	background-color: rgb(230, 100, 100);
+}
+
+.question {
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	cursor: pointer;
+}
+
+.answer {
+	font-size: 18px;
+	margin: 0;
+	display: none;
+}
+
+.question.active + .answer {
+	display: block;
+}
+
+.question::after {
+	content: "+";
+	float: right;
+}
+
+.question.active::after {
+	content: "-";
+}
+
+.footer {
+	background-color: rgb(51, 38, 88);
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+}
+
+.footer p {
+	margin: 0;
+	font-size: 14px;
+}
